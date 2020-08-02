@@ -1,0 +1,85 @@
+body {
+	font-family: $font-0;
+	font-size-adjust: 0.5;
+}
+
+@for $i from 0 through 4 {
+	$value: (5 - ($i - 1));
+	$max: 'large-' + $value;
+	$min: 'small-' + $value;
+
+	h#{$i},
+	.font-size__#{$i} {
+		font-size: clamp(s($min), calc(#{1rem} + #{$value}vw), s($max));
+	}
+}
+
+p,
+ol,
+ul,
+dl,
+li {
+	font-size: clamp(1.25rem, calc(#{1rem} + 0.5vw), 1.414rem);
+	line-height: 1.65;
+	margin-bottom: 0.5rem;
+	font-weight: 300;
+
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5 {
+		margin-top: 1em;
+	}
+}
+
+p {
+	margin-bottom: 0.5em;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1.25;
+	margin-bottom: 0.5em;
+	color: c('base-2');
+	transition: color 1s ease;
+	font-weight: 500;
+}
+
+h1 {
+	@media (min-width: 2000px) {
+		font-size: s('large-6');
+	}
+}
+
+h2,
+h3,
+h4,
+h5 {
+	margin-top: 1.5em;
+
+	+ h2,
+	+ h3,
+	+ h4 {
+		margin-top: 0.75em;
+	}
+}
+
+h3 + h4 {
+	margin-top: 0;
+}
+
+strong {
+	font-weight: 600;
+	display: inline-block;
+}
+
+em {
+	font-style: italic;
+}

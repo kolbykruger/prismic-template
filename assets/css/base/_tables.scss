@@ -1,0 +1,31 @@
+table {
+    display: table;
+    width: 100%;
+    margin: 0.8em auto 1.5em;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #c0cefc;
+    background: #23202d;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    td, th {
+        padding: 1em;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    thead {
+        font-weight: 800;
+        color: #fff;
+    }
+
+    tbody {
+        background: rgba(255, 255, 255, 0.05);
+
+        tr:not(:last-of-type) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    }
+
+}

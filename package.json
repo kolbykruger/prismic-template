@@ -1,0 +1,27 @@
+{
+	"name": "prismic-template",
+	"version": "1.0.0",
+	"description": "A template for prismic - nuxt - netlify builds.",
+	"author": "Kolby Kruger",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build --modern",
+		"start": "cross-env NODE_ENV=production node server/index.js",
+		"generate": "nuxt generate"
+	},
+	"dependencies": {
+		"@nuxtjs/prismic": "^1.2.3",
+		"@nuxtjs/sitemap": "^2.4.0",
+		"lazysizes": "^5.2.2",
+		"nuxt": "^2.14.0",
+		"prismic-javascript": "^2.7.1",
+		"prismic-vue": "^2.0.1"
+	},
+	"devDependencies": {
+		"@nuxtjs/google-analytics": "^2.4.0",
+		"node-sass": "^4.14.1",
+		"sass-loader": "^7.3.1",
+		"webpack": "^4.44.1"
+	}
+}

@@ -1,0 +1,98 @@
+pre,
+code,
+span[class="code"] {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+pre {
+    font-size: 1rem;
+    padding: 1em;
+    margin: 1.5em auto;
+    max-width: 100%;
+    background: #23202d;
+    border-radius: 0.25em;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: normal;
+
+    code {
+        color: #c0cefc;
+        line-height: 1.5;
+        overflow: auto;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        tab-size: 4;
+        hyphens: none;
+        padding: 0;
+        font-size: inherit;
+        background: transparent;
+    }
+
+    .token {
+
+        &.property,
+        &.tag,
+        &.boolean,
+        &.number,
+        &.function-name,
+        &.symbol,
+        &.deleted {
+            color: #f7768e;
+        }
+
+        &.selector,
+        &.attr-name,
+        &.string,
+        &.char,
+        &.function,
+        &.builtin,
+        &.inserted {
+            color: #73daca;
+        }
+
+        &.atrule,
+        &.attr-value,
+        &.keyword,
+        &.class-name {
+            color: #89ddff;
+        }
+
+        &.punctuation {
+            color: #b267e6;
+        }
+
+        &.string {
+            color: #ffdb69;
+        }
+
+        &.comment {
+            color: #444b6a;
+        }
+
+    }
+}
+
+span[class="code"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: c('grey-0');
+    color: c('base-2');
+    padding: 0.3em 0.45em;
+    vertical-align: middle;
+    border-radius: 0.25em;
+    font-size: 1rem;
+    font-weight: 500;
+
+    + span[class="code"] {
+        margin-left: 0.25em;
+    }
+}
+
+p span[class="code"] {
+    word-break: break-all;
+}

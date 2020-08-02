@@ -1,0 +1,16 @@
+.sup {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: c('primary-base');
+
+    + .heading {
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0.25em;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+body {
+	background: c('background');
+	position: relative;
+	color: c('base-0');
+	line-height: 1;
+	overflow-x: hidden;
+	transition: background 1s ease, color 1s ease;
+}
+
+#app {
+	min-height: 100vh;
+}
+
+section,
+header,
+footer,
+article {
+	width: 100%;
+	margin: 0 auto;
+
+	.container {
+		margin: 0 auto;
+	}
+}
+
+main {
+}
+
+article {
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+a {
+}
+
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap; /* added line */
+}

@@ -1,0 +1,90 @@
+$colors: (
+	background: #ffffff,
+	base: (
+		0: #3c4044,
+		1: #212121,
+		2: #1a1a1a,
+	),
+	grey: (
+		0: #e0e6ef,
+	),
+	primary: (
+		lightest: lighten(#b267e6, 24%),
+		lighter: lighten(#b267e6, 16%),
+		light: lighten(#b267e6, 8%),
+		base: #b267e6,
+		dark: darken(#b267e6, 8%),
+		darker: darken(#b267e6, 16%),
+		darkest: darken(#b267e6, 24%),
+	),
+	secondary: (
+		lightest: lighten(#f7768e, 24%),
+		lighter: lighten(#f7768e, 16%),
+		light: lighten(#f7768e, 8%),
+		base: #f7768e,
+		dark: darken(#f7768e, 8%),
+		darker: darken(#f7768e, 16%),
+		darkest: darken(#f7768e, 24%),
+	),
+	tertiary: (
+		lightest: lighten(#ffdb69, 24%),
+		lighter: lighten(#ffdb69, 16%),
+		light: lighten(#ffdb69, 8%),
+		base: #ffdb69,
+		dark: darken(#ffdb69, 8%),
+		darker: darken(#ffdb69, 16%),
+		darkest: darken(#ffdb69, 24%),
+	),
+	quarternary: (
+		lightest: lighten(#11c9c3, 24%),
+		lighter: lighten(#11c9c3, 16%),
+		light: lighten(#11c9c3, 8%),
+		base: #11c9c3,
+		dark: darken(#11c9c3, 8%),
+		darker: darken(#11c9c3, 16%),
+		darkest: darken(#11c9c3, 24%),
+	),
+	quinary: (
+		lightest: lighten(#89ddff, 24%),
+		lighter: lighten(#89ddff, 16%),
+		light: lighten(#89ddff, 8%),
+		base: #89ddff,
+		dark: darken(#89ddff, 8%),
+		darker: darken(#89ddff, 16%),
+		darkest: darken(#89ddff, 24%),
+	),
+	sextet: (
+		lightest: lighten(#444b6a, 24%),
+		lighter: lighten(#444b6a, 16%),
+		light: lighten(#444b6a, 8%),
+		base: #444b6a,
+		dark: darken(#444b6a, 8%),
+		darker: darken(#444b6a, 16%),
+		darkest: darken(#444b6a, 24%),
+	),
+	menu: (
+		background-layer-1: #16141c,
+		background-layer-2: #b267e6,
+		background-layer-3: #f7768e,
+		color: #ffffff,
+	),
+);
+
+$dark: (
+	background: #16141c,
+	menu: (
+		background-layer-1: darken(#16141c, 3%),
+		background-layer-2: lighten(#16141c, 6%),
+		background-layer-3: lighten(#16141c, 12%),
+		color: #f5f3fc,
+	),
+	base: (
+		0: #f5f3fc,
+		1: #ffffff,
+		2: #ffffff,
+	),
+	grey: (
+		0: #23202d,
+	),
+	primary: #f1f2f3,
+);

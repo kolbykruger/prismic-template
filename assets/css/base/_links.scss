@@ -1,0 +1,69 @@
+a:not([class]) {
+	color: c('primary-base');
+	text-decoration: none;
+	transition: color 1s ease;
+
+	&:hover,
+	&:focus {
+		color: c('primary-light');
+	}
+
+	&:visited {
+		color: c('primary-dark');
+	}
+
+	&[href="https://eternitymarketing.com/"] {
+		color: #ef4538;
+		font-weight: 600;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA1NjggNTY4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MjsiPiAgICA8Y2lyY2xlIGN4PSIyODMuNTY2IiBjeT0iMjg0IiByPSIyNjMuNTMyIiBzdHlsZT0iZmlsbDp3aGl0ZTsiLz4gICAgPHBhdGggZD0iTTU2Ny4xNTMsMjgzLjU3OEM1NjcuMTUzLDQ0MC4xOTMgNDQwLjE5MSw1NjcuMTU1IDI4My41NzUsNTY3LjE1NUMxMjYuOTYxLDU2Ny4xNTUgMCw0NDAuMTkzIDAsMjgzLjU3OEMwLDEyNi45NjEgMTI2Ljk2MSwwIDI4My41NzUsMEM0NDAuMTkxLDAgNTY3LjE1MywxMjYuOTYxIDU2Ny4xNTMsMjgzLjU3OFpNMjgzLjU3NSw0MzAuNjc4QzIzNy4yMjMsNDMwLjY3OCAyNjguODA2LDUwMS4yOCAyODMuNTc1LDUwMS4yOEMyOTguMDg1LDUwMS4yOCAzMzAuMzI5LDQzMC42NzggMjgzLjU3NSw0MzAuNjc4Wk0yODMuNDY4LDY1Ljg3NUMyNjUuMTU0LDY2LjEwOSAyMzMuMjUsMTI2LjAzMyAyMjMuOTc4LDE2My4xMDhDMjA2LjIwNiwyMzQuMjAxIDIxOC43NTQsMjk3LjQ1NCAyMTguNzU0LDI5Ny40NTRDMTYyLjgyLDMzNS42MTcgMTcxLjQyLDM2Mi40MzggMTk4Ljg4OSw0MzMuODkzQzIxNS4wOTIsNDc2LjA0OCAyMjYuMjY3LDQ1MS4xMzkgMjMwLjg1NSw0NDAuMTYzQzIzNy41MDIsNDI0LjI4IDI0Mi42ODgsNDEyLjEwOCAyNTEuMDcxLDQwNC4yMDRMMjUxLjA3MSw0MTMuMDA0QzI1MS4wNzEsNDIzLjQ2IDI1Ni4yOTksNDI3LjUyNCAyNjEuNTI2LDQyNy41MjRMMzA1LjYyNyw0MjcuNTI0QzMxMC44NTUsNDI3LjUyNCAzMTYuMDgzLDQyMy40NiAzMTYuMDgzLDQxMy4wMDRMMzE2LjA4Myw0MDQuMjExQzMyNC40NjUsNDEyLjExNSAzMjkuNjQ4LDQyNC4yOCAzMzYuMjk1LDQ0MC4xNjNDMzQwLjg4Myw0NTEuMTM5IDM1Mi4wNTgsNDc2LjA0OCAzNjguMjYxLDQzMy44OTNDMzk1LjczMywzNjIuNDM4IDQwNC4zMzQsMzM1LjYxNyAzNDguMzk2LDI5Ny40NTRDMzQ4LjM5NiwyOTcuNDU0IDM2MC45NDQsMjM0LjIwMSAzNDMuMTY4LDE2My4xMDhDMzMzLjg4MiwxMjUuOTYxIDMwMS44NzEsNjUuODc1IDI4My41NzUsNjUuODc1TDI4My40NjgsNjUuODc1Wk0yODMuNTc1LDIyMS42NTRMMjgzLjU2OCwyMjEuNjU0QzI2Ni41MzIsMjIxLjY1NCAyNTIuNzIzLDIwNy44NDYgMjUyLjcyMywxOTAuODEzQzI1Mi43MjMsMTczLjc3OCAyNjYuNTMyLDE1OS45NjkgMjgzLjU2OCwxNTkuOTY5TDI4My41NzUsMTU5Ljk2OUMzMDAuNjA2LDE1OS45NzQgMzE0LjQwOCwxNzMuNzg0IDMxNC40MDgsMTkwLjgxM0MzMTQuNDA4LDIwNy44NDQgMzAwLjYwNiwyMjEuNjQ3IDI4My41NzUsMjIxLjY1NFoiIHN0eWxlPSJmaWxsOnJnYigyMzksNjksNTYpO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvc3ZnPg==);
+			margin-right: 0.25em;
+			width: 1.25em;
+			height: 1.25em;
+			vertical-align: sub;
+		}
+
+		&:hover,
+		&:focus {
+			opacity: 0.85;
+		}
+	}
+}
+
+.link__gradient {
+	.link__gradient--colorized {
+		display: inline;
+		background-image: linear-gradient(
+			to right,
+			c(primary-base) 0%,
+			c('secondary-base') 50%,
+			c('base-2') 50%,
+			c('base-2') 100%
+		);
+		background-size: 300% 100%;
+		background-position-x: -225%;
+		transition: 500ms ease;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		box-decoration-break: clone;
+
+		.arrow {
+			transition-delay: 300ms;
+			transition: 500ms cubic-bezier(0.86, 0, 0.07, 1);
+		}
+	}
+
+	&:hover,
+	&:focus {
+		.link__gradient--colorized {
+			background-position-x: -300%;
+
+			.arrow {
+				margin-left: 0.5em;
+			}
+		}
+	}
+}

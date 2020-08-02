@@ -1,0 +1,183 @@
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: $header-height;
+    pointer-events: none;
+
+    .container {
+        position: relative;
+        max-width: 1400px;
+        margin: 0 auto;
+        z-index: 9999;
+    }
+
+    .group {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    button {
+        position: relative;
+        padding: 0;
+        pointer-events: all;
+
+        &:hover {
+
+            .navicon__container {
+                transform: rotateZ(90deg);
+                background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+            }
+
+            .navicon {
+
+                &__bars {
+
+                }
+
+                &__bar {
+                    top: calc(50% - 16px);
+                    height: 32px;
+                    width: 3px;
+                    border-radius: 2px;
+                    border-width: 0;
+                    background: c('base-2');
+
+                    &--one {
+                        left: 12px;
+                    }
+
+                    &--two {
+                        left: 23px;
+                    }
+
+                    &--three {
+                        left: 34px;
+                    }
+                }
+            }
+        }
+
+        &.active {
+
+            .navicon__container {
+                transform: rotateZ(90deg);
+                background: rgba(255,255,255,0.15);
+            }
+
+            &:hover {
+
+                div {
+                    transform: rotateZ(270deg);
+                }
+
+                .navicon {
+
+                    &__bars {
+
+                    }
+
+                    &__bar {
+
+                        &--two {
+                            top: 48px;
+                        }
+                    }
+                }
+            }
+
+            .navicon {
+
+                &__bars {
+
+                }
+
+                &__bar {
+                    background: c('menu-color');
+                    height: 42px;
+                    width: 3px;
+                    border-radius: 2px;
+                    border-width: 0;
+
+                    &--one {
+                        transform: rotateZ(45deg);
+                        transform-origin: bottom left;
+                        top: -7px;
+                        left: 6px;
+                    }
+
+                    &--two {
+                        top: -48px;
+                        left: calc(50% - 2px);
+                        transition: top 1.2s;
+                        background: c('secondary-base');
+                    }
+
+                    &--three {
+                        transform: rotateZ(-45deg);
+                        transform-origin: bottom right;
+                        top: -6px;
+                        left: 35px;
+                    }
+                }
+            }
+        }
+
+        &.cursor--entered {
+
+        }
+
+        .navicon__container {
+            border-radius: 50%;
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 500ms ease;
+        }
+    }
+
+    .navicon {
+
+        &__bars {
+            position: relative;
+            perspective: 2000px;
+            transform-style: preserve-3d;
+            max-width: 42px;
+            width: 100%;
+            height: 42px;
+            overflow: hidden;
+        }
+
+        &__bar {
+            position: absolute;
+            display: block;
+            top: calc(50% - 5px);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: transparent;
+            border: 3px solid c('base-2');
+            will-change: transform;
+            backface-visibility: none;
+            transition: all 700ms cubic-bezier(.165,.84,.44,1), fill 200ms cubic-bezier(.165,.84,.44,1), width 200ms;
+
+            &--one {
+                left: 0;
+            }
+
+            &--two {
+                left: calc(50% - 5px);
+            }
+
+            &--three {
+                left: calc(100% - 10px);
+            }
+        }
+    }
+}

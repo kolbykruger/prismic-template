@@ -1,0 +1,36 @@
+html {
+	transition: 1s ease;
+	//colors
+	@each $name, $color in $colors {
+		@if type-of($color) == 'map' {
+			@each $subname, $subcolor in $color {
+				--color-#{$name}-#{$subname}: #{$subcolor};
+			}
+		} @else {
+			--color-#{$name}: #{$color};
+		}
+	}
+
+	&[theme='dark'] {
+		@each $name, $color in $dark {
+			@if type-of($color) == 'map' {
+				@each $subname, $subcolor in $color {
+					--color-#{$name}-#{$subname}: #{$subcolor};
+				}
+			} @else {
+				--color-#{$name}: #{$color};
+			}
+		}
+	}
+
+	//sizing
+	@each $name, $size in $sizing {
+		@if type-of($size) == 'map' {
+			@each $subname, $subsize in $size {
+				--size-#{$name}-#{$subname}: #{$subsize};
+			}
+		} @else {
+			--size-#{$name}: #{$size};
+		}
+	}
+}

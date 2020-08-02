@@ -1,0 +1,15 @@
+.columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	grid-gap: 4vw;
+
+	.column {
+		&--1 {
+			h1,
+			h2,
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}

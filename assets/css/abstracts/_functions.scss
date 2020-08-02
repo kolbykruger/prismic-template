@@ -1,0 +1,14 @@
+//color
+@function c($color-name) {
+	@return var(--color-#{$color-name});
+}
+
+//sizing
+@function s($sizing) {
+	@return var(--size-#{$sizing});
+}
+
+//structure
+@function g($sizing) {
+	@return var(--grid-#{$sizing});
+}
